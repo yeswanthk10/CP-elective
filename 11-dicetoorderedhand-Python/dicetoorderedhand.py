@@ -11,5 +11,8 @@
 
 
 def dicetoorderedhand(a, b, c):
-	# your code goes here
-	pass
+	n = [a,b,c]
+	n.sort(reverse=True)
+	l = [str(i) for i in n]
+	res = ''.join(l)
+	return int(res)
